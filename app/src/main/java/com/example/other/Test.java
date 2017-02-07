@@ -1,8 +1,8 @@
 package com.example.other;
 
 public class Test {
-	 MyClassBetterOne someStuff = new MyClassBetterOne("martin", 12);
-	 int maxAge = MyClassBetterOne.maxAge;
+	 Person someStuff = new Person("martin", 12);
+	 int maxAge = Person.maxAge;
 	 boolean b1 = true;
 	 boolean b2 = false;
 	 
