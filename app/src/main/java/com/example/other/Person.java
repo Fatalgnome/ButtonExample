@@ -3,6 +3,7 @@ package com.example.other;
 public class Person {
 	String name;
 	int age;
+
 	public static int maxAge = 100;
 	
 	public Person(String name, int age)
