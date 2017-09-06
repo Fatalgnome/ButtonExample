@@ -24,10 +24,11 @@ public class MainActivity extends Activity {
 
         dialog = new Dialog(this);
         
-        dialog.setTitle("Greetings");
+        dialog.setTitle("Greetings"); //hardcoded - should be in strings.xml
 
         TextView textView = new TextView(this);
-        textView.setText("Hello World");
+        //textView.setText("Hello World"); //Hardcoded - not best.
+        textView.setText(R.string.hello_world); //refers to strings.xml  better!
         textView.setPadding(20, 20, 20, 20);
         
         dialog.setContentView(textView);
