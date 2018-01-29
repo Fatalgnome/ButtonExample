@@ -5,7 +5,7 @@ public class Person {
 	int age;
 
 	public static int maxAge = 100;
-	
+
 	public Person(String name, int age)
 	{
 		this.age = age;

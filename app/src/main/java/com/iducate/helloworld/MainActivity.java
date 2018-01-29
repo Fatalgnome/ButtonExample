@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
 
         dialog = new Dialog(this);
         
-        dialog.setTitle("Greetings"); //hardcoded - should be in strings.xml
+        dialog.setTitle(R.string.greetings); //hardcoded - should be in strings.xml
 
         TextView textView = new TextView(this);
         //textView.setText("Hello World"); //Hardcoded - not best.
