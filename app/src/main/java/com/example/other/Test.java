@@ -2,7 +2,7 @@ package com.example.other;
 
 public class Test {
 	 Person someStuff = new Person("martin", 12);
-	 int maxAge = Person.maxAge;
+	 int maxAge = Person.MAX_AGE;
 	 boolean b1 = true;
 	 boolean b2 = false;
 	 
