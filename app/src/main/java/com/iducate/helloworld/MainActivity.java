@@ -18,6 +18,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.btnHello);
+        //another way of adding a clicklistener.
       /*  button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -25,13 +26,15 @@ public class MainActivity extends Activity {
                 toast.show();
             }
         });*/
-        System.out.println("martin");
         Log.d("MainActivity","Startup finished");
 
     }
-    
+
+    //This clicklistener is attached to the button
+    //in the layout xml file - check the code there.
     public void sayHello(View view) {
 
+        //This also shows how we can generate UI from code.
         dialog = new Dialog(this);
         
         dialog.setTitle("greetings"); //hardcoded - should be in strings.xml!
@@ -39,7 +42,8 @@ public class MainActivity extends Activity {
 
         TextView textView = new TextView(this);
         //textView.setText("Hello World"); //Hardcoded - not best.
-        textView.setText(R.string.hello_world); //refers to strings.xml  better!
+        // refers to strings.xml better!
+        textView.setText(R.string.hello_world);
         textView.setPadding(20, 20, 20, 20);
         
         dialog.setContentView(textView);

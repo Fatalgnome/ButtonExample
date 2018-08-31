@@ -1,10 +1,13 @@
 package com.example.other;
 
 public class Person {
-	String name;
-	int age;
+	private String name;
+	private int age;
 
-	public static int maxAge = 100;
+	//An example of a constant.
+	public final static int MAX_AGE = 100;
+
+
 
 	public Person(String name, int age)
 	{
