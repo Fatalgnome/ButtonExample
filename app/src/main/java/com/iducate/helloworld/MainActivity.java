@@ -2,6 +2,7 @@ package com.iducate.helloworld;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    //TODO do something here
     Dialog dialog;
 
     @Override
@@ -19,10 +21,13 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
         Button button = findViewById(R.id.btnHello);
         //another way of adding a clicklistener.
-      /*  button.setOnClickListener(new View.OnClickListener() {
+
+      /* button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast toast = Toast.makeText(getApplicationContext(),"Hello class",Toast.LENGTH_LONG);
+                Button button2 = (Button) v;
+                button2.setBackgroundColor(Color.BLUE);
+                Toast toast = Toast.makeText(getApplicationContext(),"Hello class - good morning",Toast.LENGTH_LONG);
                 toast.show();
             }
         });*/
@@ -37,7 +42,7 @@ public class MainActivity extends Activity {
         //This also shows how we can generate UI from code.
         dialog = new Dialog(this);
         
-        dialog.setTitle("greetings"); //hardcoded - should be in strings.xml!
+        dialog.setTitle(R.string.greetings_dialog_title); //hardcoded - should be in strings.xml!
 
 
         TextView textView = new TextView(this);

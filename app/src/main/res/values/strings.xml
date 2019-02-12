@@ -7,6 +7,9 @@
     <string name="greetings">Greetings</string>
     <string name="someText">Some test for the user...</string>
     <string name="someMoreText">Some more text...</string>
+    <string name="say_hello">Say Hello</string>
+    <string name="greetings_dialog_title">greetings</string>
+    <string name="martin">Martin</string>
 
 
 </resources>
